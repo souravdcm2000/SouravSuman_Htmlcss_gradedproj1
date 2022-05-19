@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./lab-test.css">
+    </head>
+    <body>
+        <header>
+            <div class="heading">
+                <h1>Lab Test Form</h1>
+            </div>
+        </header>
+        <div class="stick-to-top">
+            <nav class="navbar">
+                <a href="./homepage.html">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Our Medicines</button>
+                    <div class="dropdown-content">
+                        <a href="#">Fever</a>
+                        <a href="#">Muscle Pains</a>
+                        <a href="#">Cold &amp; Cough</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Health Care</button>
+                    <div class="dropdown-content">
+                        <a href="#">Baby Care</a>
+                        <a href="#">Skin Care</a>
+                        <a href="#">Home Care</a>
+                        <a href="#">Personal Care</a>
+                        <a href="#">Pet Care</a>
+                    </div>
+                </div>
+                <a href="./lab-test.html">Lab Test</a>
+            </nav>
+        </div>
+        <section class="lab-test-section">
+            <form action="">
+                <div class="lab-test-container">
+                    <div class="form-container">
+                        
+                        <div class="form-section">
+                            <h2 class="full-width">1. Your Contact Details</h2>
+                            <p>
+                                <label for="full-name">Full Name</label>
+                                <input type="text" id="full-name" name="full-name">
+                            </p>
+                            <p>
+                                <label for="patient-id">Patient Id if exists</label>
+                                <input type="text" id="patient-id" name="patient-id">
+                            </p>
+                            <p>
+                                <label for="contact-number">Contact Number</label>
+                                <input type="tel" id="contact-number" name="contact-number" pattern="[6-9]{1}[0-9]{9}">
+                            </p>
+                            <p>
+                                <label for="email-id">Email id</label>
+                                <input type="email" id="email-id" name="email-id">
+                            </p>
+                        </div>
+                        
+                        <div class="form-section">
+                            <h2 class="full-width">2. Address</h2>
+                            <p>
+                                <label for="house-number">H-No</label>
+                                <input type="text" id="house-number" name="house-number">
+                            </p>
+                            <p>
+                                <label for="street">Street</label>
+                                <input type="text" id="street" name="street">
+                            </p>
+                            <p>
+                                <label for="area">Area</label>
+                                <input type="text" id="area" name="area">
+                            </p>
+                        </div>
+                        <p class="separate-input">
+                            <label for="district">District</label>
+                            <select id="district" name="district">
+                                <option value="">Choose</option>
+                            </select>
+                        </p>
+                        <p class="separate-input">
+                            <label>Choose the Test Type (Check atleast one box)</label>
+                            <div class="checkbox-option">
+                                <input type="checkbox" name="test-type" id="cbc" value="cbc">
+                                <label for="cbc">CBC</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" name="test-type" id="complete-urine" value="complete urine">
+                                <label for="complete-urine">Complete Urine</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" name="test-type" id="lipid-profile" value="lipid profile">
+                                <label for="lipid-profile">Lipid Profile</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" name="test-type" id="tsh" value="tsh">
+                                <label for="tsh">Thyroid Stimulating Hormone (TSH)</label>
+                            </div>
+                            <div class="checkbox-option">
+                                <input type="checkbox" name="test-type" id="glucose-test" value="glucose test">
+                                <label for="glucose-test">Glucose Test</label>
+                            </div>
+                        </p>
+                        <p class="separate-input">
+                            <label>Do you want a hard copy of the report also?</label>
+                            <div class="radio-option">
+                                <input type="radio" name="hard-copy" id="hard-copy-yes" value="yes">
+                                <label for="hard-copy-yes">Yes</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="hard-copy" id="hard-copy-no" value="no">
+                                <label for="hard-copy-no">No</label>
+                            </div>
+                        </p>
+                        <div class="form-section">
+                            <h2 class="full-width">3. Select your Comfortable Date and Time</h2>
+                            <p>
+                                <label for="date">Date</label>
+                                <input type="date" id="date" name="date">
+                            </p>
+                            <p>
+                                <label for="time">Time</label>
+                                <input type="time" id="time" name="time">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="lab-test-image-container">
+                        <div class="lab-test-image"></div>
+                    </div>
+                </div>
+                <div class="form-buttons">
+                    <button type="reset">Reset</button>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+
+        <script src="" async defer></script>
+    </body>
+</html>
